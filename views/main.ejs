@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fruit Store</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/html.css" />
+  <link rel="stylesheet" href="/css/fruit.css" />
+  <link rel="stylesheet" href="/css/cart.css" />
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Fruit<span>Store</span></h1>
+
+      <!-- Search bar below logo -->
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search Products..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+      <nav class="nav">
+  <ul>
+    <li><a href="/fruits">Fruits</a></li>
+    <li><a href="/cart">Cart</a></li>
+    <li><a href="/login">Login</a></li>
+    <li><a href="/register">Register</a></li>
+    <li><a href="/login" id="logoutBtn">Logout</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Main Page Content -->
+  <main class="main-content container">
+
+
+    <%- body %>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© 2025 Fruit Store — All Rights Reserved</p>
+      <div class="social-icons">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">WhatsApp</a> |
+        <a href="#">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global JS -->
+  <script src="/js/main.js"></script>
+
+
+  <!-- Page specific JS -->
+  <%- script || "" %>
+  <!-- load products first -->
+  <script src="/js/fruits.js"></script>
+<script src="/js/searchbar.js"></script> <!-- then search -->
+<script src="/js/logout.js"></script>
+
+
+</body>
+</html>

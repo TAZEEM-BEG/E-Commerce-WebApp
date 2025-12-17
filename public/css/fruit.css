@@ -1,0 +1,194 @@
+/* Navbar Styling (placed above header) */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and buttons */
+  /* background: linear-gradient(90deg, #1e3c72, #2a5298);  🔥 modern blue gradient */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(14, 14, 14);
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+
+/* Logo Styling */
+.logo {
+  flex-shrink: 0; /* Prevent the logo from shrinking */
+}
+
+.logo-img {
+  height: 100px; /* Adjust logo size */
+  width: auto; /* Keep the aspect ratio of the logo */
+}
+
+/* Right-aligned buttons (Login/Logout) */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Style for both Login and Logout buttons */
+.nav-right button {
+  background-color: #f44336; /* Red color for logout button */
+  color: white;
+  border: none;
+  padding: 08px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1rem;
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+
+/* Hover effect for the buttons */
+.nav-right button:hover {
+  background-color: #d32f2f;
+}
+
+/* Hide the login button when logged in and vice versa */
+/* #loginBtn {
+  display: none; }/* Hidden if logged in */
+
+
+#logoutBtn {
+  display: block; /* Visible if logged in */
+}
+
+ /* .header {
+  position: relative;          /* for absolute positioning of button
+  margin-bottom: 30px;
+} */
+
+.header h1 {
+  text-align: center;           /* Heading remains centered */
+  color: #fff;
+  font-size: 36px;
+}
+
+/* Header Styling for the Fruits Store title */
+.header {
+  /* margin-top: 100px; Offset for the fixed navbar */
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #fff;
+  margin: 0;
+}
+/* ===== Fruits and Vegetables Container ===== */
+#fruitsContainer,
+#vegetablesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 26px;
+  max-width: 1100px;
+  margin: 0 auto 40px auto;
+}
+
+/* ===== Fruit Card ===== */
+.fruit-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px 15px 20px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.fruit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Image ===== */
+.fruit-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  transition: transform 0.35s ease;
+}
+
+.fruit-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===== Name ===== */
+.fruit-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0b3d2e;   /* navbar green */
+  margin-bottom: 4px;
+}
+
+/* ===== Description / Price Text ===== */
+.fruit-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* ===== Price ===== */
+.fruit-card .price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f7a4f;
+  margin-bottom: 10px;
+}
+
+/* ===== Quantity Buttons ===== */
+
+.qty {
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+
+.qty button {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  border-radius: 50%;
+}
+
+.qty button:hover {
+  background: #2f6f52;
+}
+
+.qty span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/*Add to cart button */
+.fruit-card button {
+  padding: 0px 15px;
+  background-color: #448464;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fruit-card button:hover {
+  background-color: #218838;
+}
+
+   
+#btn1 {
+ color: white;
+ background-color: #448464;   
+ padding: 5px 5px;
+ border: none;
+ border-radius: 6px;
+}
+
+

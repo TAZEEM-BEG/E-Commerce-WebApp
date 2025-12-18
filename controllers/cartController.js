@@ -1,4 +1,3 @@
-// backend/controllers/cartController.js
 import mongoose from "mongoose";
 import Cart from "../models/cartModel.js";
 

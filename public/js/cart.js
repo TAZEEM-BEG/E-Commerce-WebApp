@@ -54,7 +54,7 @@ checkoutBtn.addEventListener("click", async () => {
     // 1️⃣ Merge guest cart to backend
     let localCart = JSON.parse(localStorage.getItem("cart")) || [];
     if (localCart.length > 0) {
-      const mergeRes = await fetch("http://localhost:3000/api/cart/save", {
+      const mergeRes = await fetch("/api/cart/save", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +70,7 @@ checkoutBtn.addEventListener("click", async () => {
     }
 
     // 2️⃣ Fetch backend cart for logged-in user
-    const cartRes = await fetch("http://localhost:3000/api/cart", {
+    const cartRes = await fetch("/api/cart", {
       headers: { Authorization: `Bearer ${token}` },
     });
     const backendCart = await cartRes.json();
@@ -90,7 +90,7 @@ checkoutBtn.addEventListener("click", async () => {
     const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
     // 5️⃣ Create Razorpay order
-    const orderRes = await fetch("http://localhost:3000/api/payment/create-order", {
+    const orderRes = await fetch("/api/payment/create-order", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
       body: JSON.stringify({ amount: total }),
@@ -107,7 +107,7 @@ checkoutBtn.addEventListener("click", async () => {
       order_id: orderData.id,
       handler: async function (response) {
         try {
-          const verifyRes = await fetch("http://localhost:3000/api/payment/verify", {
+          const verifyRes = await fetch("/api/payment/verify", {
             method: "POST",
             headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
             body: JSON.stringify({

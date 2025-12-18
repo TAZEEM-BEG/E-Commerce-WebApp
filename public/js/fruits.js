@@ -32,7 +32,7 @@ async function loadProducts() {
   //     return;
   //   
 
-    const res = await fetch("http://localhost:3000/api/fruits", {
+    const res = await fetch("/api/fruits", {
 
       method: "GET",
       headers: {

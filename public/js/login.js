@@ -37,7 +37,7 @@ if (registerForm) {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/user/register", {
+      const res = await fetch("/api/user/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, email, password })
@@ -89,7 +89,7 @@ if (loginForm) {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/user/login", {
+      const res = await fetch("/api/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password })
@@ -132,7 +132,7 @@ if (resetBtn) {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/user/reset-password", {
+      const res = await fetch("/api/user/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: newEmail, password: newPassword })

@@ -1,4 +1,3 @@
-// backend/controllers/paymentController.js
 import Razorpay from "razorpay";
 import crypto from "crypto";
 import Order from "../models/orderModel.js";

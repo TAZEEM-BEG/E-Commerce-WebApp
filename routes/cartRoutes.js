@@ -1,7 +1,7 @@
 // backend/routes/cartRoutes.js
 import express from "express";
 import { addToCart, getCart, removeFromCart, saveCart } from "../controllers/cartController.js";
-import verifyUser from "../Middleware/verifyUser.js";
+import verifyUser from "../middleware/verifyUser.js";
 const router = express.Router();
 
 router.post("/add", verifyUser(["user"]), addToCart);

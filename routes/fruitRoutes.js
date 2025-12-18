@@ -1,5 +1,5 @@
 import  express from "express";
-import verifyUser from "../Middleware/verifyUser.js";
+import verifyUser from "../middleware/verifyUser.js";
 import {
   getFruits,
   addFruit,

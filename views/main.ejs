@@ -65,7 +65,7 @@
 
 
   <!-- Page specific JS -->
-  <%- script || "" %>
+  <%- typeof script !== 'undefined' ? script : "" %>
   <!-- load products first -->
   <script src="/js/fruits.js"></script>
 <script src="/js/searchbar.js"></script> <!-- then search -->

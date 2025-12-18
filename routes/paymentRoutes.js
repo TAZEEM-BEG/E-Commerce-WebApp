@@ -1,6 +1,6 @@
 // backend/routes/paymentRoutes.js
 import express from "express";
-import { createOrder, verifyPayment, getOrderById } from "../controllers/paymentController.js";
+import { createOrder, verifyPayment, getOrderById } from "../controllers/paymentcontroller.js";
 import verifyUser from "../middleware/verifyUser.js";
 
 const router = express.Router();

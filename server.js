@@ -48,7 +48,9 @@ app.use(expressLayouts);
 app.set("layout", "main");
 
 // ---------------- Frontend Routes ----------------
-app.get("/", (req, res) => res.render("fruits"));
+app.get("/", (req, res) => 
+  res.render("fruits", { script: `<script src="/js/fruits.js"></script>` })
+);
 
 app.get("/fruits", (req, res) =>
   res.render("fruits", { script: `<script src="/js/fruits.js"></script>` })

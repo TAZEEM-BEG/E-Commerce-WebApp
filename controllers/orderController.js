@@ -1,4 +1,3 @@
-// backend/controllers/orderController.js
 import Cart from "../models/cartModel.js";
 import Order from "../models/orderModel.js";
 

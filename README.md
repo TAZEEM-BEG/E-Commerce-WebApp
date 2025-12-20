@@ -10,9 +10,6 @@ Built with Node.js, Express.js, MongoDB on the backend and EJS, HTML, CSS, JavaS
  
 --- This project demonstrates real-world backend logic, database handling, and production deployment.
 
-**Important Note: My main focus and interest is backend development. I started by building the backend and then leveraged my HTML, CSS, and JavaScript skills to develop a full-stack application,
-                improving my overall development skills.
- 
 ## Features
  
 ### User Authentication
@@ -66,6 +63,24 @@ Built with Node.js, Express.js, MongoDB on the backend and EJS, HTML, CSS, JavaS
 - Others: dotenv, morgan, cookie-parser, cors
  
 ---
+
+**Important Note: 
+
+My main focus and interest is backend development. I started by building the backend and then leveraged my HTML, CSS, and JavaScript skills to develop a full-stack application, improving my overall development skills.
+
+Apart from this project, I have built several backend-only projects, including:
+- Movie API
+- To-Do App API
+- Metro Ticket Booking API
+- Book Library API
+- Contact form with Email API
+- Quiz Model API
+- User Login/Register API
+
+- Link-- https://github.com/TAZEEM-BEG/Express-JS-API
+
+
+
  
 ## ⚙️ Installation & Setup
 

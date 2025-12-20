@@ -7,25 +7,7 @@
 ## Overview
 FruitStore is a fully responsive full-stack e-commerce web application for buying fresh fruits and vegetables.  
 Built with Node.js, Express.js, MongoDB on the backend and EJS, HTML, CSS, JavaScript on the frontend.
- 
---- This project demonstrates real-world backend logic, database handling, and production deployment.
 
-**Important Note: 
-
-My main focus and interest is backend development. I started by building the backend using Node.js and Express, and then connected it with a frontend to create a fully functional full-stack application, which helped me strengthen my full-stack development skills.
-
-Apart from this project, I have built several backend-only projects, including:
-- Movie API
-- To-Do App API
-- Metro Ticket Booking API
-- Book Library API
-- Contact form with Email API
-- Quiz Model API
-- User Login/Register API
-
-- Link-- https://github.com/TAZEEM-BEG/Express-JS-API
-
-  
 ## Features
  
 ### User Authentication
@@ -79,6 +61,21 @@ Apart from this project, I have built several backend-only projects, including:
 - Others: dotenv, morgan, cookie-parser, cors
  
 ---
+
+**Important Note: 
+
+My main focus and interest is backend development. I started by building the backend using Node.js and Express, and then connected it with a frontend to create a fully functional full-stack application, which helped me strengthen my full-stack development skills.
+
+Apart from this project, I have built several backend-only projects, including:
+- Movie API
+- To-Do App API
+- Metro Ticket Booking API
+- Book Library API
+- Contact form with Email API
+- Quiz Model API
+- User Login/Register API
+
+- Link-- https://github.com/TAZEEM-BEG/Express-JS-API
 
 ## ⚙️ Installation & Setup
 
